@@ -12,12 +12,16 @@
     --color-beta: #136dec;
     --color-alpha: #020617;
     --color-alpha-blue: #0a1e3b;
-    --color-beta-red: #dbeafe;
+    --color-beta-blue: #dbeafe;
     --color-gold: #c5a059;
     --color-beta-green: #dcfce7;
     --color-alpha-green: #16a34a;
     --color-beta-red: #fee2e2;
     --color-alpha-red: #dc2626;
+    --color-so-gray: #64748b;
+    --color-alpha-white: #f8fafc;
+    --color-beta-white: #ffffff;
+    --color-so-black: #000;
 
     --font-sans:
         'Instrument Sans', ui-sans-serif, system-ui, sans-serif,

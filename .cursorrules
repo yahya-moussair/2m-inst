@@ -164,6 +164,16 @@ Pages/
 
 ---
 
+### 📝 File Extension — Always `.jsx`, Never `.tsx`
+
+- **All new files must use the `.jsx` extension.** Never create `.tsx` files.
+- This project does not use TypeScript. Every component, page, partial, and layout is plain JSX.
+- ✅ `EventCard.jsx` · `index.jsx` · `AppLayout.jsx` · `EventForm.jsx`
+- ❌ `EventCard.tsx` · `index.tsx` · `AppLayout.tsx` · `EventForm.tsx`
+- If the user uploads or references a `.tsx` file, read it and write your output as `.jsx`.
+
+---
+
 ### 🎨 Styling — Tailwind + CSS Variables
 
 - **Tailwind CSS only** — no `style={{}}` props unless the value is truly dynamic and Tailwind cannot express it.
@@ -415,6 +425,7 @@ require __DIR__.'/blogs.php';
 
 Before finalizing any Inertia + Laravel + React output, verify every item:
 
+- [ ] All new files use `.jsx` extension — no `.tsx` anywhere
 - [ ] Page files in correct `Pages/ResourceName/` folder
 - [ ] Sub-components extracted into `Partials/` — no monolithic page files
 - [ ] All colors use CSS variable classes from `app.css`
@@ -457,6 +468,7 @@ Before finalizing any Inertia + Laravel + React output, verify every item:
 - ❌ Copy-paste logic where a reusable abstraction is the right call
 - ❌ Import `Navbar`, `Footer`, or `Sidebar` outside of `AppLayout`
 - ❌ Write a TipTap toolbar button without `type="button"`
+- ❌ Create a `.tsx` file — always use `.jsx`
 - ❌ Touch a migration without asking the user first
 - ❌ Use arbitrary Tailwind color classes when a CSS variable class exists
 - ❌ Build a custom UI primitive for something shadcn already covers
