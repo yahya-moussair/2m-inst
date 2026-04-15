@@ -1,6 +1,7 @@
 import { usePage } from '@inertiajs/react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+// import NewsletterCta from '@/components/NewsletterCta';
 import AppSidebarLayout from '@/layouts/app/app-sidebar-layout';
 import type { BreadcrumbItem } from '@/types';
 
@@ -21,14 +22,18 @@ export default function AppLayout({
             <div className="min-h-screen bg-background text-foreground">
                 <Navbar />
                 <main className="min-h-[calc(100vh-4rem)]">{children}</main>
+                {/* <NewsletterCta /> */}
                 <Footer />
             </div>
         );
     }
 
     return (
-        <AppSidebarLayout breadcrumbs={breadcrumbs}>
-            {children}
-        </AppSidebarLayout>
+        <div className="min-h-screen bg-background text-foreground">
+            <AppSidebarLayout breadcrumbs={breadcrumbs}>
+                {children}
+            </AppSidebarLayout>
+            {/* <NewsletterCta /> */}
+        </div>
     );
 }

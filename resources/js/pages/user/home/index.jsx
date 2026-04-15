@@ -1,8 +1,8 @@
-import HeroSection from './partials/HeroSection';
-import MediaSection from './partials/MediaSection';
-import NewsSection from './partials/NewsSection';
-import QuickAccessSection from './partials/QuickAccessSection';
-
+import NewsletterCta from '@/components/NewsletterCta';
+import HeroSection from './Partials/HeroSection';
+import MediaSection from './Partials/MediaSection';
+import QuickAccessSection from './Partials/QuickAccessSection';
+import NewsSection from './Partials/NewsSection';
 export default function Home() {
     return (
         <div className="min-h-screen bg-beta-white">
@@ -16,6 +16,9 @@ export default function Home() {
             </div>
             <div className="bg-so-gray/5">
                 <NewsSection />
+            </div>
+            <div>
+                <NewsletterCta />
             </div>
         </div>
     );
