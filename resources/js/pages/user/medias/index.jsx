@@ -1,7 +1,7 @@
 import AppLayout from '@/layouts/app-layout';
 import MediaHero from '@/pages/user/medias/partials/MediaHero';
 import MediaSectionHeader from '@/pages/user/medias/partials/MediaSectionHeader';
-// import MediaGrid from '@/pages/user/medias/partials/MediaGrid';
+import MediaGrid from '@/pages/user/medias/partials/MediaGrid';
 import SynergySection from '@/pages/user/medias/partials/SynergySection';
 
 export default function Index(props) {
@@ -14,7 +14,7 @@ export default function Index(props) {
             <section className="relative py-10 sm:py-14">
                 <div className="mx-auto max-w-7xl px-4">
                     <MediaSectionHeader />
-                    {/* <MediaGrid medias={medias} /> */}
+                    <MediaGrid medias={medias} />
                 </div>
             </section>
 
