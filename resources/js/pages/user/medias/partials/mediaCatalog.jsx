@@ -1,0 +1,81 @@
+export const defaultMediaCatalog = [
+    {
+        id: '2m-tv',
+        title: '2M TV',
+        desc: 'Chaîne généraliste — information, divertissement, culture.',
+        category: 'TV',
+        accent: 'beta',
+        image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=70',
+        actions: [
+            { label: 'Regarder', tone: 'beta' },
+            { label: 'Replay', tone: 'gold' },
+        ],
+        href: '/medias',
+    },
+    {
+        id: 'radio-2m',
+        title: 'Radio 2M',
+        desc: 'Actualités, talk-shows et musique au quotidien.',
+        category: 'Radio',
+        accent: 'gold',
+        image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=70',
+        actions: [
+            { label: 'Écouter', tone: 'beta' },
+            { label: 'Programme', tone: 'alpha' },
+        ],
+        href: '/medias',
+    },
+    {
+        id: '2m-ma',
+        title: '2M.ma',
+        desc: 'Plateforme digitale — vidéos, articles et formats courts.',
+        category: 'Web',
+        accent: 'alphaGreen',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=70',
+        actions: [
+            { label: 'Visiter', tone: 'alphaGreen' },
+            { label: 'Contact', tone: 'beta' },
+        ],
+        href: '/medias',
+    },
+    {
+        id: 'jooj',
+        title: 'JOOJ',
+        desc: 'Divertissement et formats jeunesse.',
+        category: 'TV',
+        accent: 'beta',
+        image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=70',
+        actions: [
+            { label: 'Regarder', tone: 'beta' },
+            { label: 'Shows', tone: 'gold' },
+        ],
+        href: '/medias',
+    },
+    {
+        id: 'squad',
+        title: 'SQUAD',
+        desc: 'Culture digitale, gaming et tendances.',
+        category: 'Digital',
+        accent: 'alpha',
+        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=70',
+        actions: [
+            { label: 'Découvrir', tone: 'beta' },
+            { label: 'Suivre', tone: 'alpha' },
+        ],
+        href: '/medias',
+    },
+    {
+        id: 'building-morocco',
+        title: 'Building Morocco',
+        desc: 'Économie, territoires et grands projets.',
+        category: 'Magazine',
+        accent: 'gold',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=70',
+        actions: [
+            { label: 'Lire', tone: 'beta' },
+            { label: 'Projets', tone: 'gold' },
+        ],
+        href: '/medias',
+    },
+];
+

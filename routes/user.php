@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/group2M', function () {
     return Inertia::render('user/group2M/index');
 })->name('user.group.index');
+Route::get('/medias', function () {
+    return Inertia::render('user/medias/index');
+})->name('user.medias.index');
