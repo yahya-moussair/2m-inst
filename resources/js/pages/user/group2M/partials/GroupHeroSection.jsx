@@ -1,6 +1,6 @@
 export default function GroupHeroSection() {
     return (
-        <section className="relative min-h-svh overflow-hidden bg-alpha">
+        <section className="relative h-screen overflow-hidden bg-alpha">
             <div className="pointer-events-none absolute inset-0">
                 <img
                     src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2400&q=70"
@@ -8,14 +8,12 @@ export default function GroupHeroSection() {
                     className="h-full w-full object-cover opacity-20"
                     loading="lazy"
                 />
-                <div className="absolute inset-0 bg-linear-to-b from-beta-white/85 via-beta-blue/30 to-beta/65" />
-                <div className="absolute inset-0 bg-linear-to-b from-alpha/15 via-alpha/55 to-alpha" />
-                <div className="absolute inset-0 opacity-[0.35] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.18)_1px,transparent_0)] bg-size-[24px_24px]" />
-                <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
-                <div className="absolute -bottom-28 -right-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute inset-0 bg-linear-to-b from-beta-white/10 via-beta-blue/40 to-alpha/70" />
+                <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
+                <div className="absolute -right-24 -bottom-28 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
             </div>
 
-            <div className="relative flex min-h-svh flex-col">
+            <div className="relative flex h-screen flex-col">
                 <div className="mx-auto flex w-full flex-1 items-center max-w-7xl px-4 pb-24 pt-16 sm:pb-28">
                     <div className="w-full">
                         <div className="mx-auto max-w-3xl text-center">
@@ -80,7 +78,7 @@ export default function GroupHeroSection() {
                     </div>
                 </div>
 
-                <div className="absolute inset-x-0 -bottom-12">
+                {/* <div className="absolute inset-x-0 -bottom-12">
                     <div className="mx-auto max-w-7xl px-4">
                         <div className="rounded-2xl border border-beta-white/10 bg-beta-white/95 p-4 shadow-xl shadow-so-black/15 ring-1 ring-alpha/5 backdrop-blur md:p-6">
                             <div className="grid gap-4 sm:grid-cols-3">
@@ -119,7 +117,7 @@ export default function GroupHeroSection() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

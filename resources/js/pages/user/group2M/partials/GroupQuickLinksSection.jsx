@@ -1,6 +1,6 @@
 export default function GroupQuickLinksSection() {
     return (
-        <section className="bg-beta-white pb-18 pt-2">
+        <section className="bg-transparent pb-18 pt-2">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
                     <div className="max-w-2xl">

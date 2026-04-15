@@ -7,9 +7,16 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-beta-white">
             <HeroSection />
-            <MediaSection />
-            <QuickAccessSection />
-            <NewsSection />
+
+            <div className="bg-so-gray/5">
+                <MediaSection />
+            </div>
+            <div className="bg-beta-white">
+                <QuickAccessSection />
+            </div>
+            <div className="bg-so-gray/5">
+                <NewsSection />
+            </div>
         </div>
     );
 }

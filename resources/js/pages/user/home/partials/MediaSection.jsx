@@ -1,6 +1,6 @@
 export default function MediaSection() {
     return (
-        <section className="relative overflow-hidden bg-beta-white py-14 sm:py-18">
+        <section className="relative overflow-hidden bg-transparent py-14 sm:py-18">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute -top-24 -left-28 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
                 <div className="absolute -right-28 -bottom-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />

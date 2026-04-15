@@ -10,12 +10,23 @@ export default function Group2M() {
     return (
         <div className="min-h-screen bg-beta-white">
             <GroupHeroSection />
-            <GroupMissionSection />
-            <GroupTimelineSection />
-            <PresenceSection />
+
+            <div className="bg-beta-white">
+                <GroupMissionSection />
+            </div>
+            <div className="bg-so-gray/5">
+                <GroupTimelineSection />
+            </div>
+            <div className="bg-beta-white">
+                <PresenceSection />
+            </div>
             <EditorialModelSection />
-            <Vision2025Section />
-            <GroupQuickLinksSection />
+            <div className="bg-beta-white">
+                <Vision2025Section />
+            </div>
+            <div className="bg-so-gray/5">
+                <GroupQuickLinksSection />
+            </div>
         </div>
     );
 }

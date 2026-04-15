@@ -1,6 +1,6 @@
 export default function Vision2025Section() {
     return (
-        <section className="bg-beta-white py-14 sm:py-18">
+        <section className="bg-transparent py-14 sm:py-18">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="overflow-hidden rounded-3xl bg-linear-to-br from-beta via-beta/85 to-alpha-blue shadow-xl shadow-so-black/10 ring-1 ring-beta/20">
                     <div className="grid gap-8 p-8 sm:p-10 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
