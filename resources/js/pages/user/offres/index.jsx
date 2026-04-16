@@ -39,15 +39,15 @@ export default function Index() {
 
     return (
         <div className="min-h-screen bg-so-gray/5">
-            <main className="mx-auto max-w-7xl px-4 py-10 sm:py-12">
-                <div className="grid gap-10 sm:gap-14">
-                    <OffresHero />
+            <div className="grid gap-10 sm:gap-14">
+                <OffresHero />
+                <div className='mx-auto max-w-7xl px-4 py-10 sm:py-12 grid gap-20'>
                     <OffresFilters />
                     <OffresTenderTable tenders={tenders} />
                     <OffresSupplierCta />
                     <OffresFaq />
                 </div>
-            </main>
+            </div>
         </div>
     );
 }
