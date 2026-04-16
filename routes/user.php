@@ -18,4 +18,7 @@ Route::get('/gouvernance', function () {
 Route::get('/esg', function () {
     return Inertia::render('user/esg/index');
 })->name('user.esg.index');
+Route::get('/offres', function () {
+    return Inertia::render('user/offres/index');
+})->name('user.offres.index');
 

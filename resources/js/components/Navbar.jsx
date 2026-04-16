@@ -5,7 +5,7 @@ const navItems = [
     { label: 'Médias', href: '/medias' },
     { label: 'Gouvernance', href: '/gouvernance' },
     { label: 'ESG', href: '/esg' },
-    { label: 'Presse', href: '/presse' },
+    { label: "Appels d'Offres", href: '/offres' },
     { label: 'Carrières', href: '/carrieres' },
 ];
 
