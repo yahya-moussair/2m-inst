@@ -1,15 +1,26 @@
-function ActionCard({ title, subtitle, icon }) {
+function ActionCard({ title, subtitle, icon, tone = 'blue' }) {
+    const toneClasses = {
+        red: 'bg-beta-red text-alpha-red',
+        blue: 'bg-beta-blue text-beta',
+        green: 'bg-beta-green text-alpha-green',
+    };
+
     return (
-        <div className="rounded-2xl bg-beta-white p-6 shadow-sm ring-1 ring-alpha/10">
+        <div className="rounded-2xl bg-beta-white p-8 shadow-sm ring-1 ring-alpha/10">
             <div className="flex items-start gap-4">
-                <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-beta-blue/50 text-alpha ring-1 ring-alpha/10">
+                <div
+                    className={[
+                        'inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full ring-1 ring-alpha/10',
+                        toneClasses[tone] ?? toneClasses.blue,
+                    ].join(' ')}
+                >
                     {icon}
                 </div>
                 <div className="min-w-0">
-                    <div className="text-sm font-extrabold tracking-tight text-alpha">
+                    <div className="text-lg font-extrabold tracking-tight text-alpha">
                         {title}
                     </div>
-                    <div className="mt-2 text-sm leading-6 text-so-gray">
+                    <div className="mt-3 text-sm leading-6 text-so-gray">
                         {subtitle}
                     </div>
                 </div>
@@ -24,6 +35,7 @@ export default function EsgSocialActions() {
             title: 'Solidarité',
             subtitle:
                 'Programmes dédiés à l’appui des initiatives locales et à l’accompagnement des publics vulnérables.',
+            tone: 'red',
             icon: (
                 <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
                     <path
@@ -37,6 +49,7 @@ export default function EsgSocialActions() {
             title: 'Éducation & Culture',
             subtitle:
                 'Accès renforcé aux contenus, à la formation et à la valorisation de la création.',
+            tone: 'blue',
             icon: (
                 <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
                     <path
@@ -50,6 +63,7 @@ export default function EsgSocialActions() {
             title: 'Environnement',
             subtitle:
                 'Actions de sensibilisation et d’optimisation de nos pratiques pour réduire l’empreinte.',
+            tone: 'green',
             icon: (
                 <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
                     <path
@@ -62,27 +76,28 @@ export default function EsgSocialActions() {
     ];
 
     return (
-        <section id="actions" className="py-10 sm:py-14">
+        <section id="actions" className="bg-so-gray/5 py-16 sm:py-20">
             <div className="mx-auto max-w-7xl px-4">
-                <div className="flex items-end justify-between gap-6">
-                    <div className="max-w-3xl">
-                        <h2 className="text-2xl font-extrabold tracking-tight text-alpha sm:text-3xl">
-                            Actions &amp; impact social
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                    <div className="max-w-xl">
+                        <div className="text-xs font-extrabold uppercase tracking-[0.22em] text-beta">
+                            Solidarité
+                        </div>
+                        <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-alpha sm:text-4xl">
+                            Solidarité &amp; Impact Social
                         </h2>
-                        <p className="mt-3 text-sm leading-6 text-so-gray sm:text-base">
-                            Une sélection d’actions structurantes, alignées avec nos valeurs
-                            et notre mission.
-                        </p>
                     </div>
+
                     <a
                         href="#"
-                        className="hidden rounded-full bg-alpha px-4 py-2 text-sm font-extrabold text-beta-white shadow-sm ring-1 ring-alpha/10 transition hover:bg-alpha/90 sm:inline-flex"
+                        className="inline-flex items-center gap-2 text-sm font-extrabold text-beta transition hover:opacity-80"
                     >
-                        Tout voir
+                        Voir toutes les actions
+                        <span aria-hidden="true">→</span>
                     </a>
                 </div>
 
-                <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-12 grid gap-6 lg:grid-cols-3">
                     {actions.map((action) => (
                         <ActionCard key={action.title} {...action} />
                     ))}

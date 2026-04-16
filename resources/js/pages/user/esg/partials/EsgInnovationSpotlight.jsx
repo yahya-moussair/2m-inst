@@ -1,85 +1,79 @@
-function Badge({ children }) {
-    return (
-        <span className="inline-flex items-center rounded-full bg-beta-white/10 px-3 py-1 text-xs font-extrabold tracking-wide text-beta-white ring-1 ring-beta-white/10">
-            {children}
-        </span>
-    );
-}
-
 export default function EsgInnovationSpotlight() {
     return (
-        <section className="relative overflow-hidden bg-alpha-blue py-14 sm:py-18">
-            <div className="pointer-events-none absolute inset-0">
-                <div className="absolute inset-0 bg-linear-to-b from-alpha-blue/40 via-alpha-blue to-alpha-blue" />
-                <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/15 blur-3xl" />
-                <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-gold/15 blur-3xl" />
-                <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)] bg-size-[22px_22px]" />
-            </div>
-
-            <div className="relative mx-auto max-w-7xl px-4">
-                <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
-                    <div className="rounded-2xl bg-beta-white/10 p-6 ring-1 ring-beta-white/10 shadow-2xl shadow-so-black/20 sm:p-8">
-                        <div className="flex flex-wrap gap-2">
-                            <Badge>Innovation</Badge>
-                            <Badge>Créativité</Badge>
-                            <Badge>Inclusion</Badge>
-                        </div>
-                        <h2 className="mt-5 text-2xl font-extrabold tracking-tight text-beta-white sm:text-3xl">
-                            Le Lab de l’innovation créative
-                        </h2>
-                        <p className="mt-4 text-sm leading-6 text-alpha-white/75 sm:text-base">
-                            Un espace pour prototyper, expérimenter et accélérer des idées à
-                            impact — au service des communautés et de la transformation.
-                        </p>
-
-                        <div className="mt-7 flex flex-wrap gap-3">
-                            <a
-                                href="#"
-                                className="inline-flex h-12 items-center justify-center rounded-full bg-beta px-6 text-sm font-semibold text-beta-white shadow-sm ring-1 ring-beta/25 transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha-blue focus-visible:outline-none"
-                            >
-                                Explorer le Lab
-                            </a>
-                            <a
-                                href="#"
-                                className="inline-flex h-12 items-center justify-center rounded-full bg-beta-white/10 px-6 text-sm font-semibold text-beta-white ring-1 ring-beta-white/10 transition hover:bg-beta-white/15 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha-blue focus-visible:outline-none"
-                            >
-                                Voir nos projets
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-beta-white/10 shadow-2xl shadow-so-black/25">
-                        <div className="absolute inset-0">
-                            <img
-                                src="https://images.unsplash.com/photo-1528460033278-a6ba57020470?auto=format&fit=crop&w=2000&q=70"
-                                alt=""
-                                loading="lazy"
-                                className="h-full w-full object-cover opacity-80"
-                            />
-                            <div className="absolute inset-0 bg-linear-to-b from-alpha-blue/10 via-alpha-blue/20 to-alpha-blue/85" />
-                        </div>
-
-                        <div className="relative grid min-h-[320px] content-end p-6 sm:p-8">
-                            <div className="flex items-end justify-between gap-4">
-                                <div>
-                                    <div className="text-sm font-extrabold text-beta-white">
-                                        Score d’impact
-                                    </div>
-                                    <div className="mt-2 text-4xl font-extrabold tracking-tight text-beta-white">
-                                        94%
-                                    </div>
-                                    <div className="mt-2 text-sm text-alpha-white/70">
-                                        Indicateur interne (engagement + utilité)
-                                    </div>
+        <section className="bg-alpha-blue py-16 sm:py-20">
+            <div className="mx-auto max-w-7xl px-4">
+                <div className="rounded-3xl bg-beta/10 p-8 ring-1 ring-beta-white/10 sm:p-12 lg:p-14">
+                    <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
+                        <div>
+                            <div className="flex items-center gap-3">
+                                <div className="h-16 w-16 overflow-hidden rounded-xl bg-beta-white ring-1 ring-beta-white/10">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?auto=format&fit=crop&w=200&q=70"
+                                        alt=""
+                                        loading="lazy"
+                                        className="h-full w-full object-cover"
+                                    />
                                 </div>
+                                <div className="text-3xl font-extrabold tracking-tight text-beta-white">
+                                    LionsGEEK
+                                </div>
+                            </div>
 
-                                <div className="rounded-2xl bg-beta-white/10 p-4 ring-1 ring-beta-white/10 backdrop-blur-sm">
-                                    <div className="text-xs font-extrabold tracking-wide text-alpha-white/80">
-                                        2026
+                            <h2 className="mt-7 text-3xl font-extrabold tracking-tight text-beta-white sm:text-4xl">
+                                Le Lab de l&apos;Innovation Créative
+                            </h2>
+
+                            <p className="mt-6 text-base leading-7 text-alpha-white/80">
+                                Situé à Ain Sebaâ, ce centre digital inclusif forme gratuitement
+                                les jeunes talents casablancais aux métiers de la création
+                                numérique, du codage et de l&apos;audiovisuel.
+                            </p>
+
+                            <div className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
+                                {[
+                                    'Formation gratuite',
+                                    'Création numérique',
+                                    'Coding & audiovisuel',
+                                    'Insertion professionnelle',
+                                ].map((item) => (
+                                    <div key={item} className="flex items-center gap-3">
+                                        <span className="inline-flex h-5 w-5 items-center justify-center text-gold">
+                                            <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                                                <path
+                                                    fill="currentColor"
+                                                    d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17Z"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <div className="text-sm text-beta-white">{item}</div>
                                     </div>
-                                    <div className="mt-2 text-sm font-extrabold text-beta-white">
-                                        12 projets
-                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="mt-10">
+                                <a
+                                    href="#"
+                                    className="inline-flex h-14 items-center justify-center rounded-2xl bg-beta-white px-8 text-sm font-extrabold text-alpha shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/90 focus-visible:ring-2 focus-visible:ring-beta-white focus-visible:ring-offset-2 focus-visible:ring-offset-alpha-blue focus-visible:outline-none"
+                                >
+                                    Découvrir LionsGEEK
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="overflow-hidden rounded-2xl shadow-2xl ring-1 ring-beta-white/10">
+                                <img
+                                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1800&q=70"
+                                    alt=""
+                                    loading="lazy"
+                                    className="h-[420px] w-full object-cover sm:h-[512px]"
+                                />
+                            </div>
+
+                            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-gold p-6 shadow-xl ring-1 ring-gold/20">
+                                <div className="text-4xl font-extrabold tracking-tight text-alpha">+500</div>
+                                <div className="mt-2 text-[11px] font-extrabold uppercase tracking-[0.22em] text-alpha">
+                                    Jeunes formés
                                 </div>
                             </div>
                         </div>

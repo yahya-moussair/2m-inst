@@ -1,48 +1,75 @@
-import { Link } from '@inertiajs/react';
-
 export default function EsgHero() {
     return (
-        <section className="relative overflow-hidden bg-alpha">
+        <section className="relative h-screen overflow-hidden bg-alpha">
             <div className="pointer-events-none absolute inset-0">
                 <img
                     src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=70"
                     alt=""
-                    className="h-full w-full object-cover opacity-25"
+                    className="h-full w-full object-cover opacity-20"
                     loading="lazy"
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-beta-white/10 via-beta-blue/40 to-alpha/70" />
-                <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/20 blur-3xl" />
-                <div className="absolute -bottom-32 -right-28 h-96 w-96 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
+                <div className="absolute -right-24 -bottom-28 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
             </div>
 
-            <div className="relative mx-auto max-w-7xl px-4 py-14 sm:py-18">
-                <div className="mx-auto max-w-3xl text-center">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/10 bg-beta-white/5 px-4 py-1.5 text-[11px] font-semibold tracking-wide text-beta-white/80">
-                        <span className="inline-flex h-2 w-2 rounded-full bg-beta" />
-                        Engagement responsable
-                    </div>
+            <div className="relative flex h-screen flex-col">
+                <div className="mx-auto flex w-full max-w-7xl flex-1 items-center px-4 pb-24 pt-16 sm:pb-28">
+                    <div className="w-full">
+                        <div className="mx-auto max-w-3xl text-center">
+                            <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/15 bg-beta-white/5 px-3 py-1 text-[11px] font-semibold tracking-wide text-beta-white/90 shadow-sm">
+                                <span className="inline-flex h-2 w-2 rounded-full bg-beta" />
+                                ESG / RSE · SOREAD 2M
+                            </div>
 
-                    <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-beta-white sm:text-5xl">
-                        Engagements &amp; Impact Social
-                    </h1>
-                    <p className="mt-4 text-sm leading-6 text-beta-white/75 sm:text-base">
-                        Une dynamique ESG centrée sur l’humain, la transparence et la
-                        durabilité — avec des actions concrètes et mesurables.
-                    </p>
+                            <h1 className="mt-6 text-4xl font-extrabold leading-[1.03] tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
+                                Engagements &amp; Impact
+                            </h1>
 
-                    <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
-                        <Link
-                            href="#actions"
-                            className="inline-flex h-12 items-center justify-center rounded-full bg-beta px-6 text-sm font-semibold text-beta-white shadow-sm ring-1 ring-beta/25 transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none"
-                        >
-                            Découvrir nos actions
-                        </Link>
-                        <a
-                            href="#resources"
-                            className="inline-flex h-12 items-center justify-center rounded-full bg-beta-white/5 px-6 text-sm font-semibold text-beta-white/90 shadow-sm ring-1 ring-beta-white/15 backdrop-blur-sm transition hover:bg-beta-white/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none"
-                        >
-                            Ressources &amp; publications
-                        </a>
+                            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-beta-white/80 sm:text-lg">
+                                Une stratégie centrée sur l’humain, la transparence et la durabilité
+                                — avec des actions concrètes et mesurables.
+                            </p>
+
+                            <div className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-beta-white/75">
+                                {[
+                                    'Inclusion & diversité',
+                                    'Solidarité',
+                                    'Innovation',
+                                    'Trajectoire bas carbone',
+                                ].map((pill) => (
+                                    <div key={pill} className="inline-flex items-center gap-2">
+                                        <span className="inline-flex h-1.5 w-1.5 rounded-full bg-beta" />
+                                        {pill}
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:items-center">
+                                <a
+                                    href="#actions"
+                                    className="inline-flex w-full items-center justify-center rounded-xl bg-beta px-6 py-3 text-sm font-semibold text-beta-white shadow-lg shadow-so-black/20 ring-1 ring-beta/25 transition hover:bg-beta/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                >
+                                    Découvrir nos actions
+                                    <svg
+                                        viewBox="0 0 20 20"
+                                        aria-hidden="true"
+                                        className="ml-2 h-4 w-4"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M11.2 4.2a1 1 0 0 1 1.4 0l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 1 1-1.4-1.4l3.3-3.3H3a1 1 0 1 1 0-2h11.1l-3.0-3.0a1 1 0 0 1 0-1.4Z"
+                                        />
+                                    </svg>
+                                </a>
+                                <a
+                                    href="#resources"
+                                    className="inline-flex w-full items-center justify-center rounded-xl border border-beta-white/15 bg-beta-white/5 px-6 py-3 text-sm font-semibold text-beta-white/95 shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                >
+                                    Ressources &amp; publications
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
